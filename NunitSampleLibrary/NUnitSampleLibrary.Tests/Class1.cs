@@ -1,9 +1,7 @@
 ﻿using NUnit.Framework;
+using NunitSampleLibrary;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NUnitSampleLibrary.Tests
 {
@@ -11,9 +9,11 @@ namespace NUnitSampleLibrary.Tests
     public class CalculatorTests
     {
         [Test]
-        public void ShouldAddNumber()
+        public void AddNumberTest()
         {
-            
+            var calculator = new Calculator();
+            int result = calculator.Add(10, 50);
+            Assert.AreEqual(60, result);
         }
     }
 }
