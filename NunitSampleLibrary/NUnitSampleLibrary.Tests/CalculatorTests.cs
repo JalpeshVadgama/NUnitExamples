@@ -1,7 +1,5 @@
 ﻿using NUnit.Framework;
 using NunitSampleLibrary;
-using System;
-using System.Linq;
 
 namespace NUnitSampleLibrary.Tests
 {
